@@ -1,0 +1,52 @@
+.wrapper {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: $kumarOut;
+    font-size: 3.4rem;
+    line-height: 3.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    span {
+        display: block;
+    }
+}
+
+h3 {
+    font-family: $kumarOne;
+    font-size: 1.65rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.105rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: $kumarOne;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    background-color: $evergreen;
+    color: $solidWhite;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: $lato;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}

@@ -1,0 +1,64 @@
+.introContainer {
+    display: flex;
+
+    .introText {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+
+    }
+    .introImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.galleryContainer {
+    display: flex;
+
+    img {
+        width: calc(100% / 3);
+        padding: 20px;
+    }
+}
+
+
+.mainContactsContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .mainContactsText {
+        width: calc(100% / 2);
+    }
+}
+
+.programs {
+    display: flex;
+}
+
+.locations {
+    display: flex;
+}
+
+
+
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        text-align: center;
+    }
+    button {
+        width: 20%;
+
+    }
+}

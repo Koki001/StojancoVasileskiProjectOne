@@ -1,0 +1,40 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    .navList {
+        display: flex;
+
+        li {
+            text-align: center;
+            line-height: 1.85rem;
+            letter-spacing: 0.05rem;
+            font-size: 1rem;
+            font-family: $lato;
+            text-transform: uppercase;
+            padding-right: 50px;
+
+            a {
+                color: $solidBlack;
+            }
+        }
+    }
+
+}
+
+.mainHeader {
+    background-image: url(../assets/header-home.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100%;
+
+    .secondHeaderImage {
+
+        img {
+            width: 50%;
+        }
+    }
+
+}
+

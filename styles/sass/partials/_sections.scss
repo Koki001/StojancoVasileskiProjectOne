@@ -1,3 +1,7 @@
+p {
+    padding: 30px;
+}
+
 .introContainer {
     display: flex;
 
@@ -5,8 +9,11 @@
         display: flex;
         flex-direction: column;
         width: 75%;
-
+        align-items: flex-start;
+        padding: 50px;
+        
     }
+
     .introImage {
         display: flex;
         justify-content: center;
@@ -18,14 +25,15 @@
     }
 }
 
-
-
+.gallery {
+    background-color: $iceColor;
+}
 .galleryContainer {
     display: flex;
 
     img {
         width: calc(100% / 3);
-        padding: 20px;
+        padding: 25px;
     }
 }
 
@@ -37,6 +45,10 @@
     .mainContactsText {
         width: calc(100% / 2);
     }
+}
+
+.aboutContainer {
+    background-color: $iceColor;
 }
 
 .programs {
@@ -61,5 +73,26 @@
     button {
         width: 20%;
 
+    }
+}
+
+.sectionBreak {
+    background-image: url(../assets/banner-image.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: 100vw;
+}
+
+
+footer {
+    background-color: $solidBlack;
+    
+    p {
+    margin: 0;
+    text-align: center;
+    color: $solidWhite;
+    background-color: $solidBlack;
     }
 }

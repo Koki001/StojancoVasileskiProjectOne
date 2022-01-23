@@ -313,11 +313,15 @@ html {
   letter-spacing: 0.05rem;
   font-size: 1rem;
   font-family: "Lato";
+  font-weight: bold;
   text-transform: uppercase;
   padding-right: 50px;
 }
 .navBar .navList li a {
   color: #151514;
+}
+.navBar .navList li a:hover, .navBar .navList li a:focus {
+  border-bottom: 4px solid #f8fb05;
 }
 
 .mainHeader {
@@ -325,8 +329,15 @@ html {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  background-size: 100%;
+  position: relative;
+  margin-bottom: 200px;
+}
+.mainHeader h1 {
+  padding-left: 200px;
+}
+.mainHeader .secondHeaderImage {
+  position: relative;
+  top: 150px;
 }
 .mainHeader .secondHeaderImage img {
   width: 50%;
@@ -336,6 +347,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
 }
 .introContainer .introText {
   display: -webkit-box;
@@ -349,18 +364,10 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 50px;
+  padding: 0 100px 120px 0;
 }
 .introContainer .introImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 25%;
 }
 .introContainer .introImage img {
   width: 100%;
@@ -448,11 +455,6 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.programs img {
-  width: 100%;
-  -webkit-box-shadow: -25px 25px 0px -5px #f8fb05;
-          box-shadow: -25px 25px 0px -5px #f8fb05;
-}
 .programs .programsText {
   width: 85%;
   margin-left: 15%;
@@ -461,6 +463,11 @@ html {
 .programs .programsImage {
   width: 85%;
   margin-left: 15%;
+}
+.programs .programsImage img {
+  width: 100%;
+  -webkit-box-shadow: -25px 25px 0px -5px #f8fb05;
+          box-shadow: -25px 25px 0px -5px #f8fb05;
 }
 
 .locations {
@@ -476,13 +483,6 @@ html {
           justify-content: flex-end;
   position: relative;
 }
-.locations img {
-  width: 85%;
-  -webkit-box-shadow: 25px 25px 0px -5px #f8fb05;
-          box-shadow: 25px 25px 0px -5px #f8fb05;
-  position: absolute;
-  top: -35px;
-}
 .locations .locationsText {
   width: 85%;
   text-align: end;
@@ -490,6 +490,13 @@ html {
 }
 .locations .locationsImage {
   width: 80%;
+}
+.locations .locationsImage img {
+  width: 85%;
+  -webkit-box-shadow: 25px 25px 0px -5px #f8fb05;
+          box-shadow: 25px 25px 0px -5px #f8fb05;
+  position: absolute;
+  top: -35px;
 }
 
 .searchContainer {
@@ -513,11 +520,18 @@ html {
 
 .sectionBreak {
   background-image: url(../assets/banner-image.jpg);
-  height: 70vh;
+  height: 500px;
   background-repeat: no-repeat;
   width: 100%;
   background-position: top center;
   background-size: 100vw;
+}
+
+.searchContainer {
+  padding: 150px 200px 150px;
+}
+.searchContainer button {
+  width: 280px;
 }
 
 footer {

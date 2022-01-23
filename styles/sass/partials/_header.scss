@@ -11,11 +11,17 @@
             letter-spacing: 0.05rem;
             font-size: 1rem;
             font-family: $lato;
+            font-weight: bold;
             text-transform: uppercase;
             padding-right: 50px;
 
             a {
                 color: $solidBlack;
+                &:hover,
+                &:focus {
+                    border-bottom: 4px solid $brightYellow;
+                }
+                
             }
         }
     }
@@ -27,11 +33,16 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    background-size: 100%;
+    position: relative;
+    margin-bottom: 200px;
+
+    h1 {
+        padding-left: 200px;
+    }
 
     .secondHeaderImage {
-
+        position: relative;
+        top: 150px;
         img {
             width: 50%;
         }

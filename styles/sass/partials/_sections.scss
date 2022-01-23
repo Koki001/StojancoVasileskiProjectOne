@@ -1,6 +1,3 @@
-p {
-    padding: 30px;
-}
 
 .introContainer {
     display: flex;
@@ -21,6 +18,7 @@ p {
 
         img {
             width: 100%;
+            box-shadow: -25px 25px 0px -5px $brightYellow;
         }
     }
 }
@@ -30,33 +28,96 @@ p {
 }
 .galleryContainer {
     display: flex;
+    justify-content: space-between;
 
     img {
-        width: calc(100% / 3);
-        padding: 25px;
+        width: calc((100% / 3) - 20px);
+        padding: 100px 0;
     }
 }
 
-
+.iconHolderMain {
+    display: flex;
+}
 .mainContactsContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px 0 120px 0;
+    
+
+    .iconHolderMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        background-color: $brightYellow;
+    }
+
+    i {
+        font-size: 1.1rem;
+        text-align: center;
+    }
 
     .mainContactsText {
-        width: calc(100% / 2);
+        width: 46%;
+        padding-left: 20px;
+    
+    }
+    h3 {
+        margin: 0;
     }
 }
 
 .aboutContainer {
     background-color: $iceColor;
+    display: flex;
+    justify-content: space-between;
 }
 
 .programs {
     display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        box-shadow: -25px 25px 0px -5px $brightYellow;
+    }
+    .programsText {
+    width: 85%;
+    margin-left: 15%;
+    padding: 100px 200px 100px 0;
+    
+    }
+    .programsImage {
+        width: 85%;
+        margin-left: 15%;
+
+    }
 }
+
+
 
 .locations {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    img {
+        width: 85%;
+        box-shadow: 25px 25px 0px -5px $brightYellow;
+        position: absolute;
+        top: -35px;
+    }
+    .locationsText {
+        width: 85%;
+        text-align: end;
+        padding: 100px 0 100px 200px;
+    }
+    .locationsImage {
+        width: 80%;
+    }
 }
 
 
@@ -81,7 +142,7 @@ p {
     height: 70vh;
     background-repeat: no-repeat;
     width: 100%;
-    background-position: center;
+    background-position: top center;
     background-size: 100vw;
 }
 

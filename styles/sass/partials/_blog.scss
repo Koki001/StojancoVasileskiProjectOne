@@ -1,0 +1,25 @@
+.blogContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .blogContent {
+        width: 60%;
+
+        .commentForm {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                display: inline-block;
+                width: calc(100% / 2);
+            }
+            .blogLabels {
+                display: flex;
+            }
+        }
+    }
+    
+    .blogAside {
+        width: 20%;
+    }
+}

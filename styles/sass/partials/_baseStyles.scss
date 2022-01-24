@@ -36,6 +36,13 @@ button {
     background-color: $evergreen;
     color: $solidWhite;
     text-transform: uppercase;
+    padding: 10px 10px 5px 10px;
+    border: 2px solid transparent;
+
+        &:hover,
+        &:focus {
+            border: 2px solid $brightYellow;
+        }
 }
 
 ul {

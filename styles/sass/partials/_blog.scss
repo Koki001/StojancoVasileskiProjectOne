@@ -1,13 +1,42 @@
+.blogMain {
+    background-color: $iceColor;
+}
+
 .blogContainer {
     display: flex;
     justify-content: space-between;
 
+
     .blogContent {
         width: 60%;
+        position: relative;
+        bottom: 120px;
+        .blogContentImage {
+                box-shadow: 0px 40px 0px 0px $solidWhite;
+
+                img {
+                box-shadow: 25px 25px 0px -5px $brightYellow;
+                width: 100%;
+                position: relative;
+                right: 10px;                
+                }
+        }
+
+        .blogContentText {
+            padding: 20px 100px 20px 0;
+            padding-left: 15%;
+            background-color: $solidWhite;
+            box-shadow: 10px 10px 0px 0px $brightYellow;
+        }
+
+        .blogComments {
+            padding-left: 15%;
+        }
 
         .commentForm {
             display: flex;
             flex-direction: column;
+            padding-left: 15%;
 
             input {
                 display: inline-block;

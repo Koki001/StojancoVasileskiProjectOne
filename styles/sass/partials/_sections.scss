@@ -50,26 +50,29 @@
     justify-content: center;
     margin: 70px 0 120px 0;
     
+    .iconTextWrapper {
+        width: 50%;
+        display: flex;
+    }
 
     .iconHolderMain {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        width: 48px;
-        height: 48px;
+        width: 120px;
+        height: 50px;
         background-color: $brightYellow;
     }
 
     i {
         font-size: 1.1rem;
         text-align: center;
+        
     }
 
     .mainContactsText {
-        width: 46%;
         padding-left: 20px;
-    
     }
     h3 {
         margin: 0;

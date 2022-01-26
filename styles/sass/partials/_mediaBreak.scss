@@ -1,0 +1,30 @@
+// media break for smaller screens
+
+@media (max-width: 1500px) {
+    
+    p {
+        text-decoration: underline;
+        font-size: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 0.7rem + 1vw, 1.65rem);
+        text-decoration: underline;
+    }
+
+}
+
+@media (max-width: 1360px) {
+    
+    p {
+        text-decoration: underline;
+        font-size: clamp(0.7rem, 0.3rem + 1vw, 1rem);
+    }
+
+}
+
+@media (max-width: 900px) {
+    p {
+        border: 1px solid red;
+    }
+}

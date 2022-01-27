@@ -8,28 +8,6 @@ html {
     margin: 0 auto;
 }
 
-h1 {
-    font-family: $kumarOut;
-    font-size: 3.4rem;
-    line-height: 3.2rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    span {
-        display: block;
-    }
-}
-
-h3 {
-    font-family: $kumarOne;
-    font-size: 1.65rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.105rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    span {
-        display: block;
-    }
-}
 
 button {
     font-family: $kumarOne;
@@ -57,10 +35,4 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-family: $lato;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.1rem;
-    font-weight: 400;
-}
+

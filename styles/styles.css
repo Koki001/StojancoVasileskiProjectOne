@@ -246,29 +246,6 @@ html {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Kumar One Outline";
-  font-size: 3.4rem;
-  line-height: 3.2rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-h1 span {
-  display: block;
-}
-
-h3 {
-  font-family: "Kumar One";
-  font-size: 1.65rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.105rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-h3 span {
-  display: block;
-}
-
 button {
   font-family: "Kumar One";
   font-size: 1rem;
@@ -293,7 +270,45 @@ a {
   text-decoration: none;
 }
 
-p {
+h1 {
+  font-family: "Kumar One Outline";
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h1 span {
+  display: block;
+}
+
+h3 {
+  font-family: "Kumar One";
+  font-size: 1.65rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.105rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h3 span {
+  display: block;
+}
+
+p,
+h5,
+textarea,
+input {
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+h5 {
+  line-height: 1rem;
+}
+
+li {
   font-family: "Lato";
   font-size: 1rem;
   line-height: 1.6rem;
@@ -589,10 +604,15 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.blogContainer h5 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .blogContainer .blogContent {
   width: 60%;
   position: relative;
-  bottom: 120px;
+  bottom: 150px;
 }
 .blogContainer .blogContent .blogContentImage {
   -webkit-box-shadow: 0px 40px 0px 0px #f5f5f5;
@@ -613,7 +633,54 @@ footer p {
           box-shadow: 10px 10px 0px 0px #f8fb05;
 }
 .blogContainer .blogContent .blogComments {
+  margin-top: 80px;
   padding-left: 15%;
+}
+.blogContainer .blogContent .commentDavin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogContainer .blogContent .commentDavin .davinText {
+  width: 85%;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+.blogContainer .blogContent .commentLisa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogContainer .blogContent .commentLisa .lisaText {
+  width: 85%;
+  padding-left: 50px;
+  padding-bottom: 60px;
+}
+.blogContainer .blogContent .blogForm button {
+  margin-top: 40px;
+}
+.blogContainer .blogContent textarea,
+.blogContainer .blogContent input {
+  background-color: #E0FDDF;
+  border: none;
+  text-transform: uppercase;
+  padding: 40px;
+}
+.blogContainer .blogContent input {
+  border-bottom: 2px solid #065635;
+  display: inline-block;
+}
+.blogContainer .blogContent input[type=email],
+.blogContainer .blogContent input[type=name] {
+  width: calc(100% / 2);
+}
+.blogContainer .blogContent input[type=email] {
+  margin-left: 50px;
+}
+.blogContainer .blogContent textarea {
+  resize: none;
+  margin-top: 40px;
+  border: 2px solid #065635;
 }
 .blogContainer .blogContent .commentForm {
   display: -webkit-box;
@@ -625,17 +692,44 @@ footer p {
           flex-direction: column;
   padding-left: 15%;
 }
-.blogContainer .blogContent .commentForm input {
-  display: inline-block;
-  width: calc(100% / 2);
-}
 .blogContainer .blogContent .commentForm .blogLabels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .blogContainer .blogAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 20%;
+  height: 100%;
+  margin-top: 150px;
+  -webkit-box-shadow: -10px 30px 0px 5px #f8fb05;
+          box-shadow: -10px 30px 0px 5px #f8fb05;
+}
+.blogContainer .blogAside .blogAsideImage {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: -10px 25px 0px 5px #f8fb05;
+          box-shadow: -10px 25px 0px 5px #f8fb05;
+}
+.blogContainer .blogAside .blogAsideImage img {
+  width: 100%;
+}
+.blogContainer .blogAside .blogAsideText {
+  background-color: #f8fb05;
+  padding: 0 10px 15px 10px;
+}
+.blogContainer .blogAside .blogAsideText ul {
+  list-style: disc;
+  padding-left: 30px;
 }
 
 @media (max-width: 1500px) {

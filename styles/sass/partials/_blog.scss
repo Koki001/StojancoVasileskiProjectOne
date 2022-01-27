@@ -5,12 +5,18 @@
 .blogContainer {
     display: flex;
     justify-content: space-between;
+            
+        h5 {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
 
     .blogContent {
         width: 60%;
         position: relative;
-        bottom: 120px;
+        bottom: 150px;
         .blogContentImage {
                 box-shadow: 0px 40px 0px 0px $solidWhite;
 
@@ -27,10 +33,64 @@
             padding-left: 15%;
             background-color: $solidWhite;
             box-shadow: 10px 10px 0px 0px $brightYellow;
+
         }
 
         .blogComments {
+            margin-top: 80px;
             padding-left: 15%;
+        }
+
+        .commentDavin {
+            display: flex;
+
+            .davinText {
+                width: 85%;
+                padding-left: 50px;
+                padding-bottom: 100px;
+            }
+        }
+
+        .commentLisa {
+            display: flex;
+           
+            .lisaText {
+                width: 85%;
+                padding-left: 50px;
+                padding-bottom: 60px;
+            }
+        }
+
+        .blogForm button {
+            margin-top: 40px;
+        }
+
+        textarea,
+        input {
+            background-color: $iceColor;
+            border: none;
+            text-transform: uppercase;
+            padding: 40px;
+        }
+
+        input {
+            border-bottom: 2px solid $evergreen;
+            display: inline-block;
+
+        }
+
+        input[type="email"],
+        input[type="name"] {
+            width: calc(100% / 2);
+        }
+        input[type="email"] {
+            margin-left: 50px;
+        }
+
+        textarea {
+            resize: none;
+            margin-top: 40px;
+            border: 2px solid $evergreen;
         }
 
         .commentForm {
@@ -38,10 +98,6 @@
             flex-direction: column;
             padding-left: 15%;
 
-            input {
-                display: inline-block;
-                width: calc(100% / 2);
-            }
             .blogLabels {
                 display: flex;
             }
@@ -49,6 +105,34 @@
     }
     
     .blogAside {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         width: 20%;
+        height: 100%;
+        margin-top: 150px;
+        box-shadow: -10px 30px 0px 5px $brightYellow;
+        
+
+        .blogAsideImage {
+            position: relative;
+            top: 5px;
+            box-shadow: -10px 25px 0px 5px $brightYellow;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        .blogAsideText {
+            background-color: $brightYellow;
+            padding: 0 10px 15px 10px;
+
+            ul {
+                list-style: disc;
+                padding-left: 30px;
+            }
+        }
+
     }
 }

@@ -1,2 +1,48 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap');
+
+h1 {
+    font-family: $kumarOut;
+    font-size: 3.4rem;
+    line-height: 3.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    span {
+        display: block;
+    }
+}
+
+h3 {
+    font-family: $kumarOne;
+    font-size: 1.65rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.105rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    span {
+        display: block;
+    }
+}
+
+p,
+h5,
+textarea,
+input {
+    font-family: $lato;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+h5 {
+    line-height: 1rem;
+}
+
+li {
+    font-family: $lato;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}

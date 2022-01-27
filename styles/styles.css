@@ -316,6 +316,11 @@ li {
   font-weight: 400;
 }
 
+.cornerTitle {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,11 +676,8 @@ footer p {
   display: inline-block;
 }
 .blogContainer .blogContent input[type=email],
-.blogContainer .blogContent input[type=name] {
+.blogContainer .blogContent input[type=text] {
   width: calc(100% / 2);
-}
-.blogContainer .blogContent input[type=email] {
-  margin-left: 50px;
 }
 .blogContainer .blogContent textarea {
   resize: none;
@@ -696,6 +698,9 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blogContainer .blogAside {
   display: -webkit-box;
@@ -773,7 +778,7 @@ footer p {
   width: 20%;
 }
 
-.commentForm {
+.commentFormContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,8 +792,9 @@ footer p {
   background-color: white;
   position: relative;
   bottom: 200px;
+  right: 50px;
 }
-.commentForm .contactLabels {
+.commentFormContact .contactLabels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,7 +803,7 @@ footer p {
           justify-content: space-between;
 }
 
-.blogForm button {
+.contactForm button {
   margin-top: 40px;
 }
 
@@ -815,7 +821,7 @@ input {
 }
 
 input[type=email],
-input[type=name] {
+input[type=text] {
   width: calc(100% / 2);
 }
 

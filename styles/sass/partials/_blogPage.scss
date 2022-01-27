@@ -96,11 +96,8 @@
         }
 
         input[type="email"],
-        input[type="name"] {
+        input[type="text"] {
             width: calc(100% / 2);
-        }
-        input[type="email"] {
-            margin-left: 50px;
         }
 
         textarea {
@@ -116,6 +113,7 @@
 
             .blogLabels {
                 display: flex;
+                justify-content: space-between;
             }
         }
     }

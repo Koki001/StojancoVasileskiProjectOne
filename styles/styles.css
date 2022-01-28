@@ -524,7 +524,7 @@ li {
   padding: 100px 0 100px 200px;
 }
 .locations .locationsImage {
-  width: 80%;
+  width: 85%;
 }
 .locations .locationsImage img {
   width: 85%;
@@ -862,24 +862,257 @@ textarea {
 }
 
 @media (max-width: 1500px) {
-  p {
-    text-decoration: underline;
-    font-size: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
+  p,
+button,
+li {
+    font-size: clamp(0.6rem, 0.5rem + 0.5vw, 1rem);
   }
 
   h3 {
     font-size: clamp(1rem, 0.7rem + 1vw, 1.65rem);
-    text-decoration: underline;
   }
 }
 @media (max-width: 1360px) {
-  p {
-    text-decoration: underline;
-    font-size: clamp(0.7rem, 0.3rem + 1vw, 1rem);
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .introContainer .introImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introContainer .introText {
+    padding-bottom: 50px;
+  }
+
+  .aboutContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .aboutContainer .programs .programsText {
+    padding: 50px;
+    margin: 0;
+    width: 100%;
+  }
+  .aboutContainer .programs .programsImage {
+    position: inherit;
+  }
+  .aboutContainer .programs .programsImage img {
+    top: 0;
+    width: 100%;
+  }
+  .aboutContainer .locations .locationsText {
+    padding: 50px;
+    width: 100%;
+  }
+  .aboutContainer .locations img {
+    position: inherit;
+    width: 100%;
   }
 }
+.mainContactsContainer {
+  margin: 50px 0 50px 0;
+}
+
+.sectionBreak {
+  height: 350px;
+}
+
+.searchContainer {
+  padding: 0 70px 30px 70px;
+}
+
+.commentFormContact {
+  right: 0;
+}
+
 @media (max-width: 900px) {
-  p {
-    border: 1px solid red;
+  h1 {
+    font-size: 2.5rem;
+    padding: 0;
+    text-align: left;
+  }
+
+  .mainHeader {
+    margin-bottom: 20px;
+    height: 380px;
+  }
+  .mainHeader .secondHeaderImage {
+    display: none;
+  }
+  .mainHeader h1 {
+    padding: 0;
+  }
+
+  .introContainer {
+    margin: 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introContainer .introText {
+    width: 60%;
+    padding: 0;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introContainer .introImage {
+    width: 60%;
+  }
+  .introContainer .introImage img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .galleryContainer img {
+    padding: 30px;
+    width: 70%;
+  }
+
+  .sectionBreak {
+    height: 280px;
+  }
+
+  .mainContactsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .mainContactsContainer .iconTextWrapper {
+    width: 70%;
+  }
+  .mainContactsContainer .iconHolderMain {
+    width: 150px;
+  }
+
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogContainer .blogContent {
+    margin-top: 30px;
+    width: 70%;
+    bottom: 0;
+  }
+  .blogContainer .blogContent .blogContentText {
+    border: 20px solid #f8fb05;
+    padding: 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogContainer .blogContent .blogContentImage img {
+    position: inherit;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogContainer .blogContent .blogComments {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .blogContainer .blogContent .blogComments h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .blogContainer .blogContent .blogComments .commentDavin,
+.blogContainer .blogContent .blogComments .commentLisa {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogContainer .blogContent .blogComments .davinImage,
+.blogContainer .blogContent .blogComments .lisaImage {
+    display: none;
+  }
+  .blogContainer .blogContent .blogComments .davinText,
+.blogContainer .blogContent .blogComments .lisaText {
+    padding: 0;
+  }
+  .blogContainer .blogContent .commentForm {
+    padding: 0;
+  }
+  .blogContainer .blogAside {
+    margin-top: 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    text-align: center;
+  }
+  .blogContainer .blogAside .blogAsideText {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 30px;
+  }
+  .blogContainer .blogAside .blogAsideImage {
+    display: none;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactContainer .contactForm {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactContainer .contactInfo {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contactContainer .contactInfo .contactIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactContainer .contactInfo .contactIcons i {
+    padding-left: 20px;
+  }
+  .contactContainer .commentFormContact {
+    width: 100%;
+    position: inherit;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }

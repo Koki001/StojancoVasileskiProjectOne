@@ -101,12 +101,13 @@
         width: 80%;
     }
     .navBar {
-
         .navList {
-
-            background-color: rgba($color: $iceColor, $alpha: 0.6);
             visibility: hidden;
+            background-color: rgba($color: $iceColor, $alpha: 0.6);
+            opacity: 0;
             padding: 10px;
+            transition: all 0.3s linear;
+        
 
             li {
                 padding-right: 20px;
@@ -119,6 +120,8 @@
 
     input[type="checkbox"]:checked ~ .navList {
         visibility: visible;
+        opacity: 1;
+        
     }
 
     h1 {
@@ -344,11 +347,103 @@
         }
 
     }
+    .blogContainer .blogContent input,
+    .blogContainer .blogContent textarea,
+    .contactContainer .contactForm input,
+    .contactContainer .contactForm textarea {
+
+        padding: 5px;
+        font-size: 1rem;
+    }    
 
 }
 
+@media (max-width: 730px) {
+
+        .cornerTitle {
+        display: none;
+    }
+
+    .navBar {
+        padding-right: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .navBar {
+        padding-right: 75px;
+    }
+
+    h1 {
+        background-color: rgba($color: $solidWhite, $alpha: 0.6);
+        text-align: center;
+    }
+
+
+    .galleryContainer img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contactContainer {
+        .commentFormContact {
+            padding: 10px;
+        }
+    }
+
+    .blogComments {
+        margin-bottom: 50px;
+
+        h5 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.2rem;
+        }
+    }
+}
 
 @media (max-width: 500px) {
 
+    .wrapper {
+        width: 100%;
+    }
+
+    .sectionBreak {
+        display: none;
+    }
+
+    .navBar {
+
+        margin-top: 10px;
+        flex-direction: column;
+    
+        .navList {
+      
+            flex-direction: column;
+            padding: 0;
+
+            li {
+                padding: 0;
+            }
+        }
+    }
+    .blogContainer {
+
+        .blogContent {
+
+            .blogContentText {
+                padding: 10px;
+                border: 10px solid $brightYellow;
+            }
+        }
+    }
 
 }

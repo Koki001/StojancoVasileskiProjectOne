@@ -321,6 +321,10 @@ li {
   line-height: 1.5rem;
 }
 
+.contactInfo p {
+  text-transform: capitalize;
+}
+
 .slideOut,
 .slideOutIcon {
   display: none;
@@ -955,9 +959,12 @@ li {
   }
 
   .navBar .navList {
-    background-color: rgba(224, 253, 223, 0.6);
     visibility: hidden;
+    background-color: rgba(224, 253, 223, 0.6);
+    opacity: 0;
     padding: 10px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .navBar .navList li {
     padding-right: 20px;
@@ -965,6 +972,7 @@ li {
 
   input[type=checkbox]:checked ~ .navList {
     visibility: visible;
+    opacity: 1;
   }
 
   h1 {
@@ -1201,5 +1209,87 @@ li {
     position: inherit;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+
+  .blogContainer .blogContent input,
+.blogContainer .blogContent textarea,
+.contactContainer .contactForm input,
+.contactContainer .contactForm textarea {
+    padding: 5px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 730px) {
+  .cornerTitle {
+    display: none;
+  }
+
+  .navBar {
+    padding-right: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .navBar {
+    padding-right: 75px;
+  }
+
+  h1 {
+    background-color: rgba(245, 245, 245, 0.6);
+    text-align: center;
+  }
+
+  .galleryContainer img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contactContainer .commentFormContact {
+    padding: 10px;
+  }
+
+  .blogComments {
+    margin-bottom: 50px;
+  }
+  .blogComments h5 {
+    margin-bottom: 10px;
+  }
+  .blogComments p {
+    line-height: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .sectionBreak {
+    display: none;
+  }
+
+  .navBar {
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navBar .navList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .navBar .navList li {
+    padding: 0;
+  }
+
+  .blogContainer .blogContent .blogContentText {
+    padding: 10px;
+    border: 10px solid #f8fb05;
   }
 }

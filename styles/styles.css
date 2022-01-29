@@ -321,6 +321,11 @@ li {
   line-height: 1.5rem;
 }
 
+.slideOut,
+.slideOutIcon {
+  display: none;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,17 +455,16 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  width: 120px;
-  height: 50px;
-  background-color: #f8fb05;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .mainContactsContainer i {
   font-size: 1.1rem;
   text-align: center;
+  padding: 12px;
+  background-color: #f8fb05;
+  border-radius: 50%;
 }
 .mainContactsContainer .mainContactsText {
   padding-left: 20px;
@@ -865,11 +869,11 @@ textarea {
   p,
 button,
 li {
-    font-size: clamp(0.6rem, 0.5rem + 0.5vw, 1rem);
+    font-size: clamp(0.85rem, 0.5rem + 0.5vw, 1rem);
   }
 
   h3 {
-    font-size: clamp(1rem, 0.7rem + 1vw, 1.65rem);
+    font-size: clamp(1rem, 0.7rem + 1.2vw, 1.65rem);
   }
 }
 @media (max-width: 1360px) {
@@ -909,10 +913,14 @@ li {
   .aboutContainer .locations .locationsText {
     padding: 50px;
     width: 100%;
+    border-bottom: 5px solid #f8fb05;
   }
   .aboutContainer .locations img {
     position: inherit;
     width: 100%;
+  }
+  .aboutContainer .locations button {
+    margin-bottom: 30px;
   }
 }
 .mainContactsContainer {
@@ -932,9 +940,37 @@ li {
 }
 
 @media (max-width: 900px) {
+  .slideOutIcon {
+    display: block;
+    font-size: 3rem;
+    height: 55px;
+    width: 55px;
+    right: 10px;
+    top: 15px;
+    position: absolute;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+
+  .navBar .navList {
+    background-color: rgba(224, 253, 223, 0.6);
+    visibility: hidden;
+    padding: 10px;
+  }
+  .navBar .navList li {
+    padding-right: 20px;
+  }
+
+  input[type=checkbox]:checked ~ .navList {
+    visibility: visible;
+  }
+
   h1 {
     font-size: 2.5rem;
-    padding: 0;
+    margin: 0;
+    padding: 200px 0;
     text-align: left;
   }
 
@@ -947,6 +983,7 @@ li {
   }
   .mainHeader h1 {
     padding: 0;
+    padding-top: 50px;
   }
 
   .introContainer {
@@ -960,7 +997,7 @@ li {
             align-items: center;
   }
   .introContainer .introText {
-    width: 60%;
+    width: 90%;
     padding: 0;
     text-align: center;
     -webkit-box-align: center;
@@ -968,11 +1005,13 @@ li {
             align-items: center;
   }
   .introContainer .introImage {
-    width: 60%;
+    width: 80%;
   }
   .introContainer .introImage img {
     -webkit-box-shadow: none;
             box-shadow: none;
+    border: 5px solid #f8fb05;
+    border-bottom: none;
   }
 
   .galleryContainer {
@@ -986,7 +1025,7 @@ li {
   }
   .galleryContainer img {
     padding: 30px;
-    width: 70%;
+    width: 90%;
   }
 
   .sectionBreak {
@@ -1004,10 +1043,54 @@ li {
     width: 100%;
   }
   .mainContactsContainer .iconTextWrapper {
-    width: 70%;
+    width: 90%;
   }
   .mainContactsContainer .iconHolderMain {
     width: 150px;
+  }
+
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  .aboutContainer .locations {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer .locations .locationsText {
+    padding: 0;
+    text-align: center;
+    width: 90%;
+  }
+  .aboutContainer .programs {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer .programs .programsText {
+    padding: 0;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 22px;
+  }
+  .aboutContainer .programs .programsImage {
+    margin: 0;
+  }
+
+  .searchContainer {
+    padding: 0 10px 50px 10px;
+  }
+
+  .blogHeader h1 {
+    padding: 200px 0;
   }
 
   .blogContainer {
@@ -1021,7 +1104,7 @@ li {
   }
   .blogContainer .blogContent {
     margin-top: 30px;
-    width: 70%;
+    width: 90%;
     bottom: 0;
   }
   .blogContainer .blogContent .blogContentText {
@@ -1074,6 +1157,10 @@ li {
   }
   .blogContainer .blogAside .blogAsideImage {
     display: none;
+  }
+
+  .contactHeader h1 {
+    padding: 200px 0;
   }
 
   .contactContainer {

@@ -1,7 +1,13 @@
+.slideOut,
+.slideOutIcon {
+    display: none;
+}
+
 .navBar {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+
     .navList {
         display: flex;
 

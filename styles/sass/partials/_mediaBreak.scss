@@ -5,11 +5,11 @@
     p,
     button,
     li {
-        font-size: clamp(0.6rem, 0.5rem + 0.5vw, 1rem);
+        font-size: clamp(0.85rem, 0.5rem + 0.5vw, 1rem);
     }
 
     h3 {
-        font-size: clamp(1rem, 0.7rem + 1vw, 1.65rem);
+        font-size: clamp(1rem, 0.7rem + 1.2vw, 1.65rem);
     }
 
 }
@@ -56,10 +56,14 @@
             .locationsText {
                 padding: 50px;
                 width: 100%;
+                border-bottom: 5px solid $brightYellow;
             }
             img {
                 position: inherit;
                 width: 100%;
+            }
+            button {
+                margin-bottom: 30px;
             }
         }
     }
@@ -83,11 +87,48 @@
 
 @media (max-width: 900px) {
 
+    .slideOutIcon {
+        display: block;
+        font-size: 3rem;
+        height: 55px;
+        width: 55px;
+        right: 10px;
+        top: 15px;
+        position: absolute;
+    }
+    
+    .wrapper {
+        width: 80%;
+    }
+    .navBar {
+
+        .navList {
+
+            background-color: rgba($color: $iceColor, $alpha: 0.6);
+            visibility: hidden;
+            padding: 10px;
+
+            li {
+                padding-right: 20px;
+                
+            }
+            
+        }
+       
+    }
+
+    input[type="checkbox"]:checked ~ .navList {
+        visibility: visible;
+    }
+
     h1 {
         font-size: 2.5rem;
-        padding: 0;
+        margin: 0;
+        padding: 200px 0;
         text-align: left;
-    }
+     }
+
+
 
     .mainHeader {
 
@@ -99,6 +140,7 @@
         }
         h1 {
         padding: 0;
+        padding-top: 50px;
 
         }
     }
@@ -108,16 +150,18 @@
         align-items: center;
 
         .introText {
-            width: 60%;
+            width: 90%;
             padding: 0;
             text-align: center;
             align-items: center;
         }
         .introImage {
-            width: 60%;
-
+            width: 80%;
+        
             img {
                 box-shadow: none;
+                border: 5px solid $brightYellow;
+                border-bottom: none;
             }
         }
     }
@@ -128,7 +172,7 @@
 
         img {
             padding: 30px;
-            width: 70%;
+            width: 90%;
         }
     }
 
@@ -143,7 +187,7 @@
         width: 100%;
 
         .iconTextWrapper {
-            width: 70%;
+            width: 90%;
         }
 
         .iconHolderMain {
@@ -151,7 +195,45 @@
         }
     }
 
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 5px;
 
+        .locations {
+            align-items: center;
+
+            .locationsText {
+                padding: 0;
+                text-align: center;
+                width: 90%;
+            }
+        }
+        .programs {
+            align-items: center;
+
+            .programsText {
+                padding: 0;
+                text-align: center;
+                width: 90%;
+                margin-bottom: 22px;
+            }
+
+            .programsImage {
+                margin: 0;
+            }
+        }
+    }
+
+    .searchContainer {
+        padding: 0 10px 50px 10px;
+    }
+
+    .blogHeader h1 {
+        padding: 200px 0;
+    
+    }
 
     .blogContainer {
 
@@ -161,7 +243,7 @@
         .blogContent {
 
             margin-top: 30px;
-            width: 70%;
+            width: 90%;
             bottom: 0;
 
             .blogContentText {
@@ -227,7 +309,9 @@
     }
 
 
-
+    .contactHeader h1 {
+        padding: 200px 0;
+    }
 
     .contactContainer {
         flex-direction: column;
@@ -260,5 +344,11 @@
         }
 
     }
+
+}
+
+
+@media (max-width: 500px) {
+
 
 }

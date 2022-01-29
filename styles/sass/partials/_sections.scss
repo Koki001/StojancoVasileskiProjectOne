@@ -38,9 +38,6 @@
 }
 
 
-
-
-
 .iconHolderMain {
     display: flex;
 }
@@ -58,17 +55,16 @@
     .iconHolderMain {
         display: flex;
         justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 120px;
-        height: 50px;
-        background-color: $brightYellow;
+        align-items: flex-start;
     }
 
     i {
+
         font-size: 1.1rem;
         text-align: center;
-        
+        padding: 12px;
+        background-color: $brightYellow;
+        border-radius: 50%;
     }
 
     .mainContactsText {

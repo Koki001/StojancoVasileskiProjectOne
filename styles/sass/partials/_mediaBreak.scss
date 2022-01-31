@@ -85,6 +85,10 @@
         right: 0;
     }
 
+    .blogComments h3 {
+        margin-bottom: 30px;
+    }
+
 @media (max-width: 900px) {
 
     .slideOutIcon {
@@ -234,7 +238,7 @@
     }
 
     .blogHeader h1 {
-        padding: 200px 0;
+        padding: 100px 0;
     
     }
 
@@ -313,7 +317,7 @@
 
 
     .contactHeader h1 {
-        padding: 200px 0;
+        padding: 100px 0;
     }
 
     .contactContainer {
@@ -380,9 +384,11 @@
         padding-right: 75px;
     }
 
-    h1 {
+    .mainHeader h1 {
         background-color: rgba($color: $solidWhite, $alpha: 0.6);
         text-align: center;
+        font-size: 2rem;
+        
     }
 
 

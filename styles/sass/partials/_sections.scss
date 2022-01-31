@@ -69,6 +69,17 @@
 
     .mainContactsText {
         padding-left: 20px;
+
+        a {
+            color: $solidBlack;
+            
+            &:hover,
+            &:focus {
+    
+                border-bottom: 4px solid $brightYellow;
+            }
+        }
+
     }
     h3 {
         margin: 0;

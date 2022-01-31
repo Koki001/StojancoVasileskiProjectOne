@@ -473,6 +473,12 @@ li {
 .mainContactsContainer .mainContactsText {
   padding-left: 20px;
 }
+.mainContactsContainer .mainContactsText a {
+  color: #151514;
+}
+.mainContactsContainer .mainContactsText a:hover, .mainContactsContainer .mainContactsText a:focus {
+  border-bottom: 4px solid #f8fb05;
+}
 .mainContactsContainer h3 {
   margin: 0;
 }
@@ -943,6 +949,10 @@ li {
   right: 0;
 }
 
+.blogComments h3 {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 900px) {
   .slideOutIcon {
     display: block;
@@ -1098,7 +1108,7 @@ li {
   }
 
   .blogHeader h1 {
-    padding: 200px 0;
+    padding: 100px 0;
   }
 
   .blogContainer {
@@ -1168,7 +1178,7 @@ li {
   }
 
   .contactHeader h1 {
-    padding: 200px 0;
+    padding: 100px 0;
   }
 
   .contactContainer {
@@ -1237,9 +1247,10 @@ li {
     padding-right: 75px;
   }
 
-  h1 {
+  .mainHeader h1 {
     background-color: rgba(245, 245, 245, 0.6);
     text-align: center;
+    font-size: 2rem;
   }
 
   .galleryContainer img {

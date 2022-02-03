@@ -1,0 +1,36 @@
+.modeContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+    z-index: 100;
+    margin: 10px 0 0 10px;
+
+    i {
+        font-size: 2rem;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        background-color: $solidWhite;
+        color: $solidBlack;
+        border: 2px dotted $evergreen;
+
+        &:hover,
+        &:focus {
+            background-color: $solidBlack;
+            color: $solidWhite;
+            border: 2px solid $brightYellow;
+        }
+    }
+
+}
+
+.darkModeGeneral {
+    background-color: rgb(148, 148, 148);
+}
+

@@ -56,7 +56,7 @@
             .locationsText {
                 padding: 50px;
                 width: 100%;
-                border-bottom: 5px solid $brightYellow;
+                
             }
             img {
                 position: inherit;
@@ -215,6 +215,7 @@
                 padding: 0;
                 text-align: center;
                 width: 90%;
+                border-bottom: 5px solid $brightYellow;
             }
         }
         .programs {

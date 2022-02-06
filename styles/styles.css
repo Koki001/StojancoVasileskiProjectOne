@@ -878,17 +878,19 @@ textarea {
 
 .modeContainer {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 10px;
   height: 60px;
   width: 60px;
   z-index: 100;
-  margin: 10px 0 0 10px;
 }
 .modeContainer i {
   font-size: 2rem;
 }
 .modeContainer button {
+  position: sticky;
+  left: 10px;
+  top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,7 +910,26 @@ textarea {
 }
 
 .darkModeGeneral {
-  background-color: #949494;
+  background-color: #9c9c9c;
+}
+
+.indexHeaderDarkMode {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.galleryDarkMode,
+.indexAboutDarkMode {
+  background-color: #769475;
+}
+
+.locations .locationsImage .indexImageDarkMode,
+.programs .programsImage .indexImageDarkMode,
+.introContainer .introImage .indexImageDarkMode {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 1500px) {
@@ -959,7 +980,6 @@ li {
   .aboutContainer .locations .locationsText {
     padding: 50px;
     width: 100%;
-    border-bottom: 5px solid #f8fb05;
   }
   .aboutContainer .locations img {
     position: inherit;
@@ -1123,6 +1143,7 @@ li {
     padding: 0;
     text-align: center;
     width: 90%;
+    border-bottom: 5px solid #f8fb05;
   }
   .aboutContainer .programs {
     -webkit-box-align: center;

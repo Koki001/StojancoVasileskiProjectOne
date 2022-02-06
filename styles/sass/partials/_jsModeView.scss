@@ -1,17 +1,20 @@
 .modeContainer {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+    top: 10px;
     height: 60px;
     width: 60px;
     z-index: 100;
-    margin: 10px 0 0 10px;
+   
 
     i {
         font-size: 2rem;
     }
 
     button {
+        position: sticky;
+        left: 10px;
+        top: 10px;
         display: flex;
         justify-content: center;
         height: 60px;
@@ -31,6 +34,21 @@
 }
 
 .darkModeGeneral {
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(156, 156, 156);
 }
 
+.indexHeaderDarkMode {
+    filter: brightness(70%);
+}
+
+.galleryDarkMode,
+.indexAboutDarkMode {
+    background-color: #769475;
+}
+
+.locations .locationsImage .indexImageDarkMode,
+.programs .programsImage .indexImageDarkMode,
+.introContainer .introImage .indexImageDarkMode {
+    filter: brightness(80%);
+    box-shadow: none;
+}

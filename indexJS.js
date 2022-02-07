@@ -19,3 +19,50 @@ modeButton.addEventListener("click", function() {
         indexImages[i].classList.toggle("indexImageDarkMode")
 });
 
+
+
+
+
+
+
+
+
+
+// gallery carousel
+
+const carouselTrack = document.querySelectorAll(".gallerySlide")
+console.log(carouselTrack)
+
+const buttonNext = document.querySelector(".nextImage")
+const buttonPrevious = document.querySelector(".previousImage")
+
+let i = 1
+
+function nextClick() {
+
+        if (i == 1 || i == 0) {
+            carouselTrack[i].classList.remove("currentImage")
+            carouselTrack[i].classList.add("rightImage")
+            ++i
+            carouselTrack[i].classList.add("currentImage")
+            carouselTrack[i].classList.remove("rightImage")
+        console.log(i)
+    }
+}
+
+function previousClick() {
+
+        if (i <= 2 && i != 0) {
+        carouselTrack[i].classList.remove("currentImage")
+        --i
+        carouselTrack[i].classList.add("currentImage")
+        console.log(i)
+    } else {
+        // i == 1
+        return i = 0
+    } 
+}
+
+
+buttonNext.addEventListener("click", nextClick)
+buttonPrevious.addEventListener("click", previousClick)

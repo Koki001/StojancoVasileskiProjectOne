@@ -1,0 +1,21 @@
+.galleryListContainer img {
+    opacity: 0.5;
+}
+
+.currentImage {
+    position: relative;
+
+
+    img {
+        opacity: 1;
+        position: absolute;
+        height: 95%;
+        width: 120%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 0;
+    }
+}
+

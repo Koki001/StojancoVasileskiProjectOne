@@ -62,9 +62,25 @@
         <section class="gallery">
             <div class="wrapper">
                 <div class="galleryContainer">
-                    <img src="./assets/gallery-image-1.jpg" alt="A teal chest with different sized drawers">
-                    <img src="./assets/gallery-image-2.jpg" alt="A round table with magazines with an orange sofa behind it with colorful pillows.">
-                    <img src="./assets/gallery-image-3.jpg" alt="A stylish chair that looks like an inverted conical straw hat.">
+                    <ul class="galleryListContainer">
+                        <li class="gallerySlide leftImage">
+                            <img src="./assets/gallery-image-1.jpg" alt="A teal chest with different sized drawers">
+                        </li>
+                        <li class="gallerySlide currentImage">
+                            <img src="./assets/gallery-image-2.jpg" alt="A round table with magazines with an orange sofa behind it with colorful pillows.">
+                        </li>
+                        <li class="gallerySlide rightImage">
+                            <img src="./assets/gallery-image-3.jpg" alt="A stylish chair that looks like an inverted conical straw hat.">
+                        </li>
+                    </ul>
+                </div>
+                <div class="galleryButtonContainer">
+                    <div class="previousContainer">
+                        <button class="previousImage"><i class="fas fa-arrow-left"></i></button>
+                    </div>
+                    <div class="nextContainer">
+                        <button class="nextImage"><i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div><!-- END .wrapper -->
         </section><!-- END GALLERY section -->

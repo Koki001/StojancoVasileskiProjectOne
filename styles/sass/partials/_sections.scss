@@ -27,13 +27,52 @@
 .gallery {
     background-color: $iceColor;
 }
-.galleryContainer {
+
+.galleryListContainer {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: calc((100% / 3) - 40px);
+     
+    }
 
     img {
-        width: calc((100% / 3) - 20px);
-        padding: 100px 0;
+        width: 100%;
+        padding: 70px 0 40px 0;
+    }
+}
+
+.previousContainer,
+.nextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 145px;
+}
+
+.galleryButtonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+
+    button {
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            font-size: 1.5rem;
+        }
     }
 }
 

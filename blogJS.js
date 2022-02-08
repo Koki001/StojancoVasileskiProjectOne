@@ -38,12 +38,12 @@ function submitClick(event) {
         
         document.body.addEventListener("click", divErase)
         console.log(divErase)
+        nameInput.value = ""
+        emailInput.value = ""
+        textInput.value = "" 
         
         function divErase() {
             document.querySelector(".blogSubmitPrompt").style.display = "none"
-            nameInput.value = ""
-            emailInput.value = ""
-            textInput.value = ""
             location.reload()
         }
     }
